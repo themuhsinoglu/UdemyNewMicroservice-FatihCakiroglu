@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/services/" />
+  <Folder Name="/src/services/catalog/">
+    <Project Path="UdemyNewMicroservice.Catalog.Api/UdemyNewMicroservice.Catalog.Api.csproj" />
+  </Folder>
+</Solution>
