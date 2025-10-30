@@ -22,7 +22,7 @@
             await context.SaveChangesAsync(cancellationToken);
 
             return ServiceResult<CreateCategoryResponse>.SuccessAsCreated(new CreateCategoryResponse(category.Id),
-         "<empty>");
+         $"/api/categories/{category.Id}");
         }
     }
 }
