@@ -1,5 +1,7 @@
 ﻿using Asp.Versioning.Builder;
+using UdemyNewMicroservice.Catalog.Api.Features.Categories.Create;
 using UdemyNewMicroservice.Catalog.Api.Features.Categories.GetAll;
+using UdemyNewMicroservice.Catalog.Api.Features.Categories.GetById;
 
 namespace UdemyNewMicroservice.Catalog.Api.Features.Categories
 {
@@ -9,9 +11,9 @@ namespace UdemyNewMicroservice.Catalog.Api.Features.Categories
         {
             app.MapGroup("api/v{version:apiVersion}/categories").WithTags("Categories")
                 .WithApiVersionSet(apiVersionSet)
-                //.CreateCategoryGroupItemEndpoint()
-                .GetAllCategoryGroupItemEndpoint();
-                //.GetByIdCategoryGroupItemEndpoint();
+                .CreateCategoryGroupItemEndpoint()
+                .GetAllCategoryGroupItemEndpoint()
+                .GetByIdCategoryGroupItemEndpoint();
         }
     }
 }
