@@ -1,8 +1,4 @@
-﻿
-
-using MediatR;
-using UdemyNewMicroservice.Shared.Extensions;
-using UdemyNewMicroservice.Shared.Filters;
+﻿using UdemyNewMicroservice.Shared.Filters;
 
 namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.Create
 {

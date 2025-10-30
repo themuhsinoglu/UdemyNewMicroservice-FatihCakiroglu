@@ -1,7 +1,5 @@
 using UdemyNewMicroservice.Catalog.Api;
 using UdemyNewMicroservice.Catalog.Api.Options;
-using UdemyNewMicroservice.Catalog.Api.Repositories;
-using UdemyNewMicroservice.Shared.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 

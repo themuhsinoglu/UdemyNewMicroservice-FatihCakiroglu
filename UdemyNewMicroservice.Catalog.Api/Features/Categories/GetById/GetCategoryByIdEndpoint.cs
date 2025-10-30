@@ -1,12 +1,4 @@
-﻿using AutoMapper;
-using MediatR;
-using System.Net;
-using UdemyNewMicroservice.Catalog.Api.Features.Categories.Dtos;
-using UdemyNewMicroservice.Catalog.Api.Repositories;
-using UdemyNewMicroservice.Shared;
-using UdemyNewMicroservice.Shared.Extensions;
-
-namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.GetById
+﻿namespace UdemyNewMicroservice.Catalog.Api.Features.Categories.GetById
 {
     public record GetCategoryByIdQuery(Guid Id) : IRequestByServiceResult<CategoryDto>;
 
