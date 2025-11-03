@@ -1,4 +1,5 @@
 using UdemyNewMicroservice.Discount.Api;
+using UdemyNewMicroservice.Discount.Api.Features.Discounts;
 using UdemyNewMicroservice.Discount.Api.Options;
 using UdemyNewMicroservice.Discount.Api.Repositories;
 
@@ -12,6 +13,8 @@ builder.Services.AddCommonServiceExt(typeof(DiscountAssembly));
 builder.Services.AddVersioningExt();
 
 var app = builder.Build();
+
+app.AddDiscountGroupEndpointExt(app.AddVersionSetExt());
 
 if (app.Environment.IsDevelopment())
 {
