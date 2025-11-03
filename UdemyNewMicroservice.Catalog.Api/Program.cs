@@ -11,7 +11,7 @@ builder.Services.AddOptionsExt();
 builder.Services.AddDatabaseServiceExt();
 builder.Services.AddCommonServiceExt(typeof(CatalogAssembly));
 builder.Services.AddVersioningExt();
-
+//attempt
 var app = builder.Build();
 
 await app.AddSeedDataExt().ContinueWith(x =>
