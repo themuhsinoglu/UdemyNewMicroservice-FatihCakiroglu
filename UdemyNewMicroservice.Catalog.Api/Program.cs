@@ -11,7 +11,7 @@ builder.Services.AddOptionsExt();
 builder.Services.AddDatabaseServiceExt();
 builder.Services.AddCommonServiceExt(typeof(CatalogAssembly));
 builder.Services.AddVersioningExt();
-//attempt
+
 var app = builder.Build();
 
 await app.AddSeedDataExt().ContinueWith(x =>
@@ -22,10 +22,9 @@ await app.AddSeedDataExt().ContinueWith(x =>
 app.AddCategoryGroupEndpointExt(app.AddVersionSetExt());
 app.AddCourseGroupEndpointExt(app.AddVersionSetExt());
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+
+app.UseSwagger();
+app.UseSwaggerUI();
+
 
 app.Run();
