@@ -1,5 +1,6 @@
 ﻿using Asp.Versioning.Builder;
 using UdemyNewMicroservice.Discount.Api.Features.Discounts.Create;
+using UdemyNewMicroservice.Discount.Api.Features.Discounts.GetByCode;
 
 namespace UdemyNewMicroservice.Discount.Api.Features.Discounts
 {
@@ -8,7 +9,8 @@ namespace UdemyNewMicroservice.Discount.Api.Features.Discounts
         public static void AddDiscountGroupEndpointExt(this WebApplication app, ApiVersionSet apiVersionSet)
         {
             app.MapGroup("api/v{version:apiVersion}/discounts").WithTags("discounts").WithApiVersionSet(apiVersionSet)
-                .CreateDiscountGroupItemEndpoint();
+                .CreateDiscountGroupItemEndpoint()
+                .GetDiscountByCodeGroupItemEndpoint();
         }
     }
 }
