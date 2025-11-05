@@ -15,4 +15,8 @@
     <ProjectReference Include="..\UdemyNewMicroservice.Shared\UdemyNewMicroservice.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\files\" />
+  </ItemGroup>
+
 </Project>
